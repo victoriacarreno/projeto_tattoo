@@ -1,0 +1,221 @@
+@font-face {
+  /*serve para registrar a fonte baixada*/
+  font-family: oldshool;
+  src: url("/src/fonts/oldschool.otf");
+}
+@font-face {
+  /*serve para registrar a fonte baixada*/
+  font-family: Comfortaa-Regular;
+  src: url("/src/fonts/Comfortaa-Regular.ttf");
+}
+@font-face {
+  /*serve para registrar a fonte baixada*/
+  font-family: Southland;
+  src: url("/src/fonts/Southland.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  background-color: black;
+}
+
+.header-menu {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  padding: 10px 25px;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.logo {
+  font-family: oldshool;
+  color: rgb(241, 225, 225);
+  font-size: 50px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav {
+  font-family: Comfortaa-Regular;
+  font-style: italic;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  border: 2px white;
+  cursor: pointer;
+  transition: 1s;
+  padding: 20px 20px;
+  flex-wrap: wrap;
+}
+.nav:hover {
+  border-bottom: 2px solid white;
+}
+
+.div-inicio {
+  background-image: url("https://cutewallpaper.org/21/black-pattern-background/Black-Pattern-Wallpaper-30-images-on-Genchiinfo.jpg");
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+}
+
+.text-inicio {
+  text-align: center;
+  justify-content: center;
+  font-family: Southland;
+  font-size: 100px;
+  color: rgb(241, 225, 225);
+}
+
+.main-container {
+  margin: 40px 200px;
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+.item-container .img {
+  width: 100%;
+  height: 100%;
+  border-radius: 2%;
+}
+
+.item-container:hover {
+  transform: scale(1.1);
+  transition: 500ms linear;
+}
+
+.item-container1 {
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+
+.item-container2 {
+  grid-column: 3/4;
+  grid-row: 1/1;
+}
+
+.item-container3 {
+  grid-column: 4/5;
+  grid-row: 1/1;
+}
+
+.item-container4 {
+  grid-column: 4/6;
+  grid-row: 2/4;
+}
+
+.item-container5 {
+  grid-column: 1/1;
+  grid-row: 3/4;
+}
+
+.item-container6 {
+  grid-column: 2/2;
+  grid-row: 3/4;
+}
+
+.item-container7 {
+  grid-column: 5/5;
+  grid-row: 1/1;
+}
+
+.item-container8 {
+  grid-column: 3/3;
+  grid-row: 2/2;
+}
+
+.item-container9 {
+  grid-column: 3/3;
+  grid-row: 3/3;
+}
+
+.item-container10 {
+  grid-column: 1/3;
+  grid-row: 4/5;
+}
+
+.item-container11 {
+  grid-column: 3/3;
+  grid-row: 4/5;
+}
+
+.item-container12 {
+  grid-column: 4/4;
+  grid-row: 4/4;
+}
+
+.item-container13 {
+  grid-column: 5/5;
+  grid-row: 4/4;
+}
+
+.item-container14 {
+  grid-column: 4/5;
+  grid-row: 5/6;
+}
+
+.item-container15 {
+  grid-column: 3/3;
+  grid-row: 5/5;
+}
+
+.item-container-sobre {
+  display: flex;
+  font-family: Comfortaa-Regular;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  flex-wrap: wrap;
+  background-color: rgba(0, 0, 0, 0.404);
+  width: 100%;
+  gap: 20px;
+  border-radius: 20px;
+  padding: 50px 100px 50px 50px;
+  transition: all 2s ease 0s;
+  height: 30%;
+  justify-content: flex-start;
+}
+
+.section-sobre {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  padding: 50px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.424);
+  gap: 60px;
+}
+
+.img-sobre {
+  width: 250px;
+  border-radius: 20px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.816);
+  border-image: initial;
+  transition: all 0.5s ease 0s;
+  align-items: end;
+}
+
+.footer {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(241, 225, 225);
+  font-size: 15px;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  padding: 20px 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
